@@ -1,6 +1,35 @@
 :root {
   --main-title-color: #ffffff;
   --second-title-color: #303030;
+  --main-btn-color: #ffffff;
+  --second-btn-color: #303030;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -13,6 +42,14 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .btn {
@@ -39,10 +76,16 @@ body {
   text-transform: uppercase;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /** ---------------- HEADER ---------------- */
 
 .header {
   background-color: grey;
+  padding-top: 32px;
 }
 
 .header-navigation {
@@ -94,7 +137,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: #303030;
+  color: var(--second-title-color);
 }
 
 .hero-link:is(:hover, :focus) {
@@ -103,13 +146,15 @@ body {
 
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .hero-title {
   font-family: "Raleway", sans-serif;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
 }
 
 .hero-bottom-text {
@@ -145,7 +190,7 @@ body {
   color: #555555;
 }
 .about-btn {
-  color: #303030;
+  color: var(--second-title-color);
 }
 
 /** ------------- PRICES -------------- */
@@ -172,7 +217,7 @@ body {
   color: #9da4bd;
 }
 .prices-btn {
-  color: #ffffff;
+  color: var(--main-btn-color);
 }
 
 /** ------------- BENEFITS -------------- */
@@ -188,7 +233,7 @@ body {
   line-height: calc(57 / 42);
   text-align: center;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--second-title-color);
 }
 
 .benefits-item-text {
@@ -196,15 +241,15 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
-  color: #303030;
+  color: var(--second-title-color);
 }
 
 .benefits-top-text {
-  color: #303030;
+  color: var(--second-title-color);
 }
 
 .benefits-title {
-  color: #303030;
+  color: var(--second-title-color);
 }
 .benefits-bottom-text {
   font-size: 18px;
@@ -216,7 +261,7 @@ body {
 .barbers {
 }
 .barbers-top-text {
-  color: #303030;
+  color: var(--second-title-color);
 }
 
 .barbers-title {
@@ -234,7 +279,7 @@ body {
   line-height: calc(25 / 18);
   text-align: center;
   letter-spacing: 0.02em;
-  color: #303030;
+  color: var(--second-title-color);
 }
 .barbers-item-text {
   font-size: 14px;
